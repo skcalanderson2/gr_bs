@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<block>
+  <name>Invert Bit Sync</name>
+  <key>bs_ec_invert_sync</key>
+  <category>bs</category>
+  <import>import bs</import>
+  <make>bs.ec_invert_sync()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

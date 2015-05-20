@@ -1,0 +1,628 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1bs_1_1bs__ax25__decoder__impl" kind="class" prot="public">
+    <compoundname>gr::bs::bs_ax25_decoder_impl</compoundname>
+    <basecompoundref refid="classgr_1_1bs_1_1bs__ax25__decoder" prot="public" virt="non-virtual">gr::bs::bs_ax25_decoder</basecompoundref>
+    <includes refid="bs__ax25__decoder__impl_8h" local="no">bs_ax25_decoder_impl.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3d3a95322c97996d28e6c408cb89de08" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::SUCCESS</definition>
+        <argsstring></argsstring>
+        <name>SUCCESS</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="32" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a91d5c53f0f72d3bc0882e71afb0ad2a0" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::FAIL</definition>
+        <argsstring></argsstring>
+        <name>FAIL</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="33" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aadaa4f7cc931777f811c6299f1554ca5" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::BIT_BUF_MAX</definition>
+        <argsstring></argsstring>
+        <name>BIT_BUF_MAX</name>
+        <initializer>= 2791</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="34" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aa1ab662c1d6660fc868759fd5f3788fa" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::FRAME_BUF_MAX</definition>
+        <argsstring></argsstring>
+        <name>FRAME_BUF_MAX</name>
+        <initializer>= 308</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="35" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a0f0b82feb8046bafacd1ef54649cc0df" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::FRAME_MAX</definition>
+        <argsstring></argsstring>
+        <name>FRAME_MAX</name>
+        <initializer>= 350</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="36" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a814614c7a155f5d79d390869cb5ce241" prot="private" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char gr::bs::bs_ax25_decoder_impl::FLAG</definition>
+        <argsstring></argsstring>
+        <name>FLAG</name>
+        <initializer>= 0x7e</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="37" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aa8190b738780e961811504415995b206" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::HUNT</definition>
+        <argsstring></argsstring>
+        <name>HUNT</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="38" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a2c5179eaf16129f9344c8198e2428ec2" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::IDLE</definition>
+        <argsstring></argsstring>
+        <name>IDLE</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="39" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1adadda295ac724b0d4bc2fae7a709e132" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::bs::bs_ax25_decoder_impl::FRAMING</definition>
+        <argsstring></argsstring>
+        <name>FRAMING</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="40" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1abf2eadf1a400d4e607a0917ca15af5ee" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::bs::bs_ax25_decoder_impl::d_printing</definition>
+        <argsstring></argsstring>
+        <name>d_printing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="43" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aea5911115c0cf864ac01ca71149167df" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* gr::bs::bs_ax25_decoder_impl::d_filename</definition>
+        <argsstring></argsstring>
+        <name>d_filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="44" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3b514b3d23cc9aa46474af7ce840cac7" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::bs::bs_ax25_decoder_impl::d_print_to_file</definition>
+        <argsstring></argsstring>
+        <name>d_print_to_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="45" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a5fd3f1e64db03fbac9bcfd20d6040f2b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="48" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1af929d62fddb56bff847f3b24674ac913" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::bs::bs_ax25_decoder_impl::d_byte</definition>
+        <argsstring></argsstring>
+        <name>d_byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="49" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1af14a76f5e87fe06d8923981f87466f83" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::d_accumulated_bits</definition>
+        <argsstring></argsstring>
+        <name>d_accumulated_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="50" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ab6c47d22b265a06f000d4d3f9d3c72ba" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::bs::bs_ax25_decoder_impl::d_bit_buf[BIT_BUF_MAX]</definition>
+        <argsstring>[BIT_BUF_MAX]</argsstring>
+        <name>d_bit_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="51" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1acfcf7dbfcc3e51368db5baf43438d777" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::d_bit_buf_size</definition>
+        <argsstring></argsstring>
+        <name>d_bit_buf_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="52" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aed98c7981598f2dab7548d8c4d1f4904" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::d_consecutive_one_bits</definition>
+        <argsstring></argsstring>
+        <name>d_consecutive_one_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="53" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ac820253b191389231fa1cbd9db56117f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::d_flag_cnt</definition>
+        <argsstring></argsstring>
+        <name>d_flag_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="56" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a691b76c7f0a08d650ff7489fe7f81e8e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::d_good_frame_cnt</definition>
+        <argsstring></argsstring>
+        <name>d_good_frame_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="57" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a29bc85eace3729c57b31a1436428dcb7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::d_good_byte_cnt</definition>
+        <argsstring></argsstring>
+        <name>d_good_byte_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="58" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a11a9aaf2c88fb5a74718d7dc0be1eec7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::bs::bs_ax25_decoder_impl::printer</definition>
+        <argsstring>(unsigned short frame_size, unsigned char *frame_buf)</argsstring>
+        <name>printer</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>frame_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>frame_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3a14f0d6bb9c81cf0183f20505bccaf8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::bs::bs_ax25_decoder_impl::file_output_1</definition>
+        <argsstring>(unsigned short frame_size, unsigned char *frame_buf, const char *filename)</argsstring>
+        <name>file_output_1</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>frame_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>frame_buf</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a413a67f3e3fbd4e87b59b8c27f55781d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::bs::bs_ax25_decoder_impl::file_output_2</definition>
+        <argsstring>(unsigned short frame_size, unsigned char *frame_buf, const char *filename)</argsstring>
+        <name>file_output_2</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>frame_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>frame_buf</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a97a4a5f2ff97ddae77d26ac149473197" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::bs::bs_ax25_decoder_impl::crc16</definition>
+        <argsstring>(unsigned char *data_p, unsigned short length)</argsstring>
+        <name>crc16</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data_p</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a6cc2e61ea8b9c8c910bf6cbc1e4c45f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::crc_valid</definition>
+        <argsstring>(int frame_size, unsigned char *frame)</argsstring>
+        <name>crc_valid</name>
+        <param>
+          <type>int</type>
+          <declname>frame_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1adef4ce3f491d48b33f44b507cc3243e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::unstuff</definition>
+        <argsstring>(int bit_buf_size, unsigned char *bit_buf, int *frame_buf_size, unsigned char *frame_buf)</argsstring>
+        <name>unstuff</name>
+        <param>
+          <type>int</type>
+          <declname>bit_buf_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bit_buf</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>frame_buf_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>frame_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a651ac160b5d82c9abf2faec32a628a55" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::bs::bs_ax25_decoder_impl::hdlc_state_machine</definition>
+        <argsstring>(unsigned char next_bit, unsigned char *frame_buf, int *frame_size)</argsstring>
+        <name>hdlc_state_machine</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>next_bit</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>frame_buf</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>frame_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="77" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ae8372e3e6fed21b92b979b0c12e19fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bs::bs_ax25_decoder_impl::bs_ax25_decoder_impl</definition>
+        <argsstring>(bool printing, int print_to_file, const char *filename)</argsstring>
+        <name>bs_ax25_decoder_impl</name>
+        <param>
+          <type>bool</type>
+          <declname>printing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>print_to_file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ac34be1fe9867aff0796d595739ed2efa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bs::bs_ax25_decoder_impl::~bs_ax25_decoder_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~bs_ax25_decoder_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a727966dc6a7c50f43cbbbac183826e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::bs::bs_ax25_decoder_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a4d5af512258132e9618b38d7be08edb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::bs::bs_ax25_decoder_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>gr::bs::bs_ax25_decoder</label>
+        <link refid="classgr_1_1bs_1_1bs__ax25__decoder"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>gr::block</label>
+      </node>
+      <node id="23">
+        <label>gr::bs::bs_ax25_decoder_impl</label>
+        <link refid="classgr_1_1bs_1_1bs__ax25__decoder__impl"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>gr::bs::bs_ax25_decoder</label>
+        <link refid="classgr_1_1bs_1_1bs__ax25__decoder"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>gr::block</label>
+      </node>
+      <node id="26">
+        <label>gr::bs::bs_ax25_decoder_impl</label>
+        <link refid="classgr_1_1bs_1_1bs__ax25__decoder__impl"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" line="30" column="1" bodyfile="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h" bodystart="29" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aadaa4f7cc931777f811c6299f1554ca5" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>BIT_BUF_MAX</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ae8372e3e6fed21b92b979b0c12e19fdc" prot="public" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>bs_ax25_decoder_impl</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a97a4a5f2ff97ddae77d26ac149473197" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>crc16</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a6cc2e61ea8b9c8c910bf6cbc1e4c45f2" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>crc_valid</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1af14a76f5e87fe06d8923981f87466f83" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_accumulated_bits</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ab6c47d22b265a06f000d4d3f9d3c72ba" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_bit_buf</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1acfcf7dbfcc3e51368db5baf43438d777" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_bit_buf_size</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1af929d62fddb56bff847f3b24674ac913" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_byte</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aed98c7981598f2dab7548d8c4d1f4904" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_consecutive_one_bits</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aea5911115c0cf864ac01ca71149167df" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_filename</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ac820253b191389231fa1cbd9db56117f" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_flag_cnt</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a29bc85eace3729c57b31a1436428dcb7" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_good_byte_cnt</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a691b76c7f0a08d650ff7489fe7f81e8e" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_good_frame_cnt</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3b514b3d23cc9aa46474af7ce840cac7" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_print_to_file</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1abf2eadf1a400d4e607a0917ca15af5ee" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_printing</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a5fd3f1e64db03fbac9bcfd20d6040f2b" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>d_state</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a91d5c53f0f72d3bc0882e71afb0ad2a0" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>FAIL</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3a14f0d6bb9c81cf0183f20505bccaf8" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>file_output_1</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a413a67f3e3fbd4e87b59b8c27f55781d" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>file_output_2</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a814614c7a155f5d79d390869cb5ce241" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>FLAG</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a727966dc6a7c50f43cbbbac183826e6b" prot="public" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aa1ab662c1d6660fc868759fd5f3788fa" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>FRAME_BUF_MAX</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a0f0b82feb8046bafacd1ef54649cc0df" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>FRAME_MAX</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1adadda295ac724b0d4bc2fae7a709e132" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>FRAMING</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a4d5af512258132e9618b38d7be08edb1" prot="public" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a651ac160b5d82c9abf2faec32a628a55" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>hdlc_state_machine</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aa8190b738780e961811504415995b206" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>HUNT</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a2c5179eaf16129f9344c8198e2428ec2" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>IDLE</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder_1aa09655106f85c9c31f53f0157a59bc3c" prot="public" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a11a9aaf2c88fb5a74718d7dc0be1eec7" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>printer</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder_1a180b3836d1ea34a0dbee02c4668d91b4" prot="public" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3d3a95322c97996d28e6c408cb89de08" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>SUCCESS</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1adef4ce3f491d48b33f44b507cc3243e5" prot="private" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>unstuff</name></member>
+      <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ac34be1fe9867aff0796d595739ed2efa" prot="public" virt="non-virtual"><scope>gr::bs::bs_ax25_decoder_impl</scope><name>~bs_ax25_decoder_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

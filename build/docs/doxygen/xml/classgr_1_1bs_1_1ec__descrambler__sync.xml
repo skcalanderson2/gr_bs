@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1bs_1_1ec__descrambler__sync" kind="class" prot="public">
+    <compoundname>gr::bs::ec_descrambler_sync</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1bs_1_1ec__descrambler__sync__impl" prot="public" virt="non-virtual">gr::bs::ec_descrambler_sync_impl</derivedcompoundref>
+    <includes refid="ec__descrambler__sync_8h" local="no">ec_descrambler_sync.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1bs_1_1ec__descrambler__sync_1aaed4d6096993d893495291336b8f8d36" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1bs_1_1ec__descrambler__sync" kindref="compound">ec_descrambler_sync</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ec_descrambler_sync&gt; gr::bs::ec_descrambler_sync::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/include/bs/ec_descrambler_sync.h" line="39" column="1" bodyfile="/home/mint/gr-bs/include/bs/ec_descrambler_sync.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__descrambler__sync_1a565c4d8492e4a294bf2e5d15618e12a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1bs_1_1ec__descrambler__sync_1aaed4d6096993d893495291336b8f8d36" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::bs::ec_descrambler_sync::make</definition>
+        <argsstring>(unsigned int tap_mask, unsigned int preload)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tap_mask</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>preload</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1bs_1_1ec__descrambler__sync" kindref="compound">bs::ec_descrambler_sync</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1bs_1_1ec__descrambler__sync" kindref="compound">bs::ec_descrambler_sync</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1bs_1_1ec__descrambler__sync_1a565c4d8492e4a294bf2e5d15618e12a8" kindref="member">bs::ec_descrambler_sync::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/include/bs/ec_descrambler_sync.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>sync_block</label>
+      </node>
+      <node id="31">
+        <label>gr::bs::ec_descrambler_sync_impl</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler__sync__impl"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>gr::bs::ec_descrambler_sync</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler__sync"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>sync_block</label>
+      </node>
+      <node id="32">
+        <label>gr::bs::ec_descrambler_sync</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler__sync"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mint/gr-bs/include/bs/ec_descrambler_sync.h" line="37" column="1" bodyfile="/home/mint/gr-bs/include/bs/ec_descrambler_sync.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1a565c4d8492e4a294bf2e5d15618e12a8" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync</scope><name>make</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1aaed4d6096993d893495291336b8f8d36" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

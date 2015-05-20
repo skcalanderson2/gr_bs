@@ -1,0 +1,14 @@
+<testsuite errors="1" failures="0" name="unittest.suite.TestSuite" tests="1" time="0.000">
+  <testcase classname="__main__.qa_ec_invert_bit_values" name="test_001_t" time="0.0003">
+    <error type="exceptions.ValueError">Unable to coerce endpoint
+  File "/usr/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/home/mint/gr-bs/python/qa_ec_invert_bit_values.py", line 41, in test_001_t
+    self.tb.connect(src, invert)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/gr/hier_block2.py", line 48, in wrapped
+    raise ValueError("Unable to coerce endpoint")
+    </error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

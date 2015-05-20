@@ -1,0 +1,70 @@
+Start testing: May 19 08:17 PDT
+----------------------------------------------------------
+1/3 Testing: test_bs
+1/3 Test: test_bs
+Command: "/bin/sh" "/home/mint/gr-bs/build/lib/test_bs_test.sh"
+Directory: /home/mint/gr-bs/build/lib
+"test_bs" start time: May 19 08:17 PDT
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_bs" end time: May 19 08:17 PDT
+"test_bs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: qa_bs_ax25_decoder
+2/3 Test: qa_bs_ax25_decoder
+Command: "/bin/sh" "/home/mint/gr-bs/build/python/qa_bs_ax25_decoder_test.sh"
+Directory: /home/mint/gr-bs/build/python
+"qa_bs_ax25_decoder" start time: May 19 08:17 PDT
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"qa_bs_ax25_decoder" end time: May 19 08:17 PDT
+"qa_bs_ax25_decoder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: qa_ec_invert_bit_values
+3/3 Test: qa_ec_invert_bit_values
+Command: "/bin/sh" "/home/mint/gr-bs/build/python/qa_ec_invert_bit_values_test.sh"
+Directory: /home/mint/gr-bs/build/python
+"qa_ec_invert_bit_values" start time: May 19 08:17 PDT
+Output:
+----------------------------------------------------------
+E
+======================================================================
+ERROR: test_001_t (__main__.qa_ec_invert_bit_values)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mint/gr-bs/python/qa_ec_invert_bit_values.py", line 41, in test_001_t
+    self.tb.connect(src, invert)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/gr/hier_block2.py", line 48, in wrapped
+    raise ValueError("Unable to coerce endpoint")
+ValueError: Unable to coerce endpoint
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Failed.
+"qa_ec_invert_bit_values" end time: May 19 08:17 PDT
+"qa_ec_invert_bit_values" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 19 08:17 PDT

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ec__invert__sync_8h" kind="file">
+    <compoundname>ec_invert_sync.h</compoundname>
+    <includes refid="api_8h" local="no">bs/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="ec__invert__sync__impl_8h" local="no">ec_invert_sync_impl.h</includedby>
+    <incdepgraph>
+      <node id="83">
+        <label>bs/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="84">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="82">
+        <label>ec_invert_sync.h</label>
+        <link refid="ec_invert_sync.h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="87">
+        <label>ec_invert_sync_impl.h</label>
+        <link refid="ec__invert__sync__impl_8h"/>
+      </node>
+      <node id="86">
+        <label>ec_invert_sync.h</label>
+        <link refid="ec_invert_sync.h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1bs_1_1ec__invert__sync" prot="public">gr::bs::ec_invert_sync</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1bs">gr::bs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mint/gr-bs/include/bs/ec_invert_sync.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classgr_1_1bs_1_1bs__ax25__decoder" kind="class"><name>gr::bs::bs_ax25_decoder</name>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder_1a180b3836d1ea34a0dbee02c4668d91b4" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder_1aa09655106f85c9c31f53f0157a59bc3c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1bs_1_1bs__ax25__decoder__impl" kind="class"><name>gr::bs::bs_ax25_decoder_impl</name>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3d3a95322c97996d28e6c408cb89de08" kind="variable"><name>SUCCESS</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a91d5c53f0f72d3bc0882e71afb0ad2a0" kind="variable"><name>FAIL</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aadaa4f7cc931777f811c6299f1554ca5" kind="variable"><name>BIT_BUF_MAX</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aa1ab662c1d6660fc868759fd5f3788fa" kind="variable"><name>FRAME_BUF_MAX</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a0f0b82feb8046bafacd1ef54649cc0df" kind="variable"><name>FRAME_MAX</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a814614c7a155f5d79d390869cb5ce241" kind="variable"><name>FLAG</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aa8190b738780e961811504415995b206" kind="variable"><name>HUNT</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a2c5179eaf16129f9344c8198e2428ec2" kind="variable"><name>IDLE</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1adadda295ac724b0d4bc2fae7a709e132" kind="variable"><name>FRAMING</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1abf2eadf1a400d4e607a0917ca15af5ee" kind="variable"><name>d_printing</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aea5911115c0cf864ac01ca71149167df" kind="variable"><name>d_filename</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3b514b3d23cc9aa46474af7ce840cac7" kind="variable"><name>d_print_to_file</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a5fd3f1e64db03fbac9bcfd20d6040f2b" kind="variable"><name>d_state</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1af929d62fddb56bff847f3b24674ac913" kind="variable"><name>d_byte</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1af14a76f5e87fe06d8923981f87466f83" kind="variable"><name>d_accumulated_bits</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ab6c47d22b265a06f000d4d3f9d3c72ba" kind="variable"><name>d_bit_buf</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1acfcf7dbfcc3e51368db5baf43438d777" kind="variable"><name>d_bit_buf_size</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1aed98c7981598f2dab7548d8c4d1f4904" kind="variable"><name>d_consecutive_one_bits</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ac820253b191389231fa1cbd9db56117f" kind="variable"><name>d_flag_cnt</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a691b76c7f0a08d650ff7489fe7f81e8e" kind="variable"><name>d_good_frame_cnt</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a29bc85eace3729c57b31a1436428dcb7" kind="variable"><name>d_good_byte_cnt</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a11a9aaf2c88fb5a74718d7dc0be1eec7" kind="function"><name>printer</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a3a14f0d6bb9c81cf0183f20505bccaf8" kind="function"><name>file_output_1</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a413a67f3e3fbd4e87b59b8c27f55781d" kind="function"><name>file_output_2</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a97a4a5f2ff97ddae77d26ac149473197" kind="function"><name>crc16</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a6cc2e61ea8b9c8c910bf6cbc1e4c45f2" kind="function"><name>crc_valid</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1adef4ce3f491d48b33f44b507cc3243e5" kind="function"><name>unstuff</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a651ac160b5d82c9abf2faec32a628a55" kind="function"><name>hdlc_state_machine</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ae8372e3e6fed21b92b979b0c12e19fdc" kind="function"><name>bs_ax25_decoder_impl</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1ac34be1fe9867aff0796d595739ed2efa" kind="function"><name>~bs_ax25_decoder_impl</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a727966dc6a7c50f43cbbbac183826e6b" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder__impl_1a4d5af512258132e9618b38d7be08edb1" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1bs_1_1ec__descrambler__sync" kind="class"><name>gr::bs::ec_descrambler_sync</name>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1aaed4d6096993d893495291336b8f8d36" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1a565c4d8492e4a294bf2e5d15618e12a8" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1bs_1_1ec__descrambler__sync__impl" kind="class"><name>gr::bs::ec_descrambler_sync_impl</name>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a44f976c7f773782552af13ad8c876e55" kind="variable"><name>d_shift_register</name></member>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a1c992cdfa4ac165bed75f47a880ef847" kind="variable"><name>d_taps</name></member>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a8fdf3e05b7a676f8adc2e1eac32b0661" kind="variable"><name>d_tap_count</name></member>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a1b211bcd7b18c787d8324ed0de787d47" kind="function"><name>ec_descrambler_sync_impl</name></member>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a0ea1a2378e2607731aee7c086a9fa2e5" kind="function"><name>~ec_descrambler_sync_impl</name></member>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1aa484e08c400c9f3856ee9fcbc8c1bc43" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1bs_1_1ec__invert__sync" kind="class"><name>gr::bs::ec_invert_sync</name>
+    <member refid="classgr_1_1bs_1_1ec__invert__sync_1a6b251b97a35034705a8af46df86445e6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1bs_1_1ec__invert__sync_1a113552440b3e0f498e3a8c031d7c6328" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1bs_1_1ec__invert__sync__impl" kind="class"><name>gr::bs::ec_invert_sync_impl</name>
+    <member refid="classgr_1_1bs_1_1ec__invert__sync__impl_1aa96ef9bff23b8cf6a863da681c8a214f" kind="function"><name>ec_invert_sync_impl</name></member>
+    <member refid="classgr_1_1bs_1_1ec__invert__sync__impl_1af034007e1084a663f7edcb26c5f5e14f" kind="function"><name>~ec_invert_sync_impl</name></member>
+    <member refid="classgr_1_1bs_1_1ec__invert__sync__impl_1aa438b594589d9e7db4e480f085b3ac96" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1bs" kind="namespace"><name>gr::bs</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a63abc89438638667bf920f97a1642ff5" kind="define"><name>BS_API</name></member>
+  </compound>
+  <compound refid="bs__ax25__decoder_8h" kind="file"><name>bs_ax25_decoder.h</name>
+  </compound>
+  <compound refid="bs__ax25__decoder__impl_8h" kind="file"><name>bs_ax25_decoder_impl.h</name>
+  </compound>
+  <compound refid="ec__descrambler__sync_8h" kind="file"><name>ec_descrambler_sync.h</name>
+  </compound>
+  <compound refid="ec__descrambler__sync__impl_8h" kind="file"><name>ec_descrambler_sync_impl.h</name>
+  </compound>
+  <compound refid="ec__invert__sync_8h" kind="file"><name>ec_invert_sync.h</name>
+  </compound>
+  <compound refid="ec__invert__sync__impl_8h" kind="file"><name>ec_invert_sync_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_10d891c3bf8c32a25500cce71896b205" kind="dir"><name>bs</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

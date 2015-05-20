@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerfile refid="bs__ax25__decoder__impl_8h">bs_ax25_decoder_impl.h</innerfile>
+    <innerfile refid="ec__descrambler__sync__impl_8h">ec_descrambler_sync_impl.h</innerfile>
+    <innerfile refid="ec__invert__sync__impl_8h">ec_invert_sync_impl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mint/gr-bs/lib/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="bs__ax25__decoder__impl_8h" kind="file">
+    <compoundname>bs_ax25_decoder_impl.h</compoundname>
+    <includes refid="bs__ax25__decoder_8h" local="no">bs/bs_ax25_decoder.h</includes>
+    <incdepgraph>
+      <node id="66">
+        <label>bs/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>bs_ax25_decoder_impl.h</label>
+        <link refid="bs_ax25_decoder_impl.h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="65">
+        <label>bs/bs_ax25_decoder.h</label>
+        <link refid="bs__ax25__decoder_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gnuradio/block.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1bs_1_1bs__ax25__decoder__impl" prot="public">gr::bs::bs_ax25_decoder_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1bs">gr::bs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mint/gr-bs/lib/bs_ax25_decoder_impl.h"/>
+  </compounddef>
+</doxygen>

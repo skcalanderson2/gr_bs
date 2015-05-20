@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classgr_1_1bs_1_1bs__ax25__decoder" kind="class"><name>gr::bs::bs_ax25_decoder</name>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder_1a180b3836d1ea34a0dbee02c4668d91b4" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1bs_1_1bs__ax25__decoder_1aa09655106f85c9c31f53f0157a59bc3c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1bs_1_1ec__descrambler__sync" kind="class"><name>gr::bs::ec_descrambler_sync</name>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1aaed4d6096993d893495291336b8f8d36" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1a565c4d8492e4a294bf2e5d15618e12a8" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1bs_1_1ec__invert__sync" kind="class"><name>gr::bs::ec_invert_sync</name>
+    <member refid="classgr_1_1bs_1_1ec__invert__sync_1a6b251b97a35034705a8af46df86445e6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1bs_1_1ec__invert__sync_1a113552440b3e0f498e3a8c031d7c6328" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1bs" kind="namespace"><name>gr::bs</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a63abc89438638667bf920f97a1642ff5" kind="define"><name>BS_API</name></member>
+  </compound>
+  <compound refid="bs__ax25__decoder_8h" kind="file"><name>bs_ax25_decoder.h</name>
+  </compound>
+  <compound refid="ec__descrambler__sync_8h" kind="file"><name>ec_descrambler_sync.h</name>
+  </compound>
+  <compound refid="ec__invert__sync_8h" kind="file"><name>ec_invert_sync.h</name>
+  </compound>
+  <compound refid="dir_10d891c3bf8c32a25500cce71896b205" kind="dir"><name>/home/mint/gr-bs/include/bs</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/mint/gr-bs/include</name>
+  </compound>
+</doxygenindex>

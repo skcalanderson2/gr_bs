@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1bs" kind="namespace">
+    <compoundname>gr::bs</compoundname>
+    <innerclass refid="classgr_1_1bs_1_1bs__ax25__decoder" prot="public">gr::bs::bs_ax25_decoder</innerclass>
+    <innerclass refid="classgr_1_1bs_1_1ec__descrambler__sync" prot="public">gr::bs::ec_descrambler_sync</innerclass>
+    <innerclass refid="classgr_1_1bs_1_1ec__invert__sync" prot="public">gr::bs::ec_invert_sync</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mint/gr-bs/include/bs/bs_ax25_decoder.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

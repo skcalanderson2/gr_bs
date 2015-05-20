@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1bs_1_1ec__descrambler__sync__impl" kind="class" prot="public">
+    <compoundname>gr::bs::ec_descrambler_sync_impl</compoundname>
+    <basecompoundref refid="classgr_1_1bs_1_1ec__descrambler__sync" prot="public" virt="non-virtual">gr::bs::ec_descrambler_sync</basecompoundref>
+    <includes refid="ec__descrambler__sync__impl_8h" local="no">ec_descrambler_sync_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a44f976c7f773782552af13ad8c876e55" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::bs::ec_descrambler_sync_impl::d_shift_register</definition>
+        <argsstring></argsstring>
+        <name>d_shift_register</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" line="32" column="1" bodyfile="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a1c992cdfa4ac165bed75f47a880ef847" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::ec_descrambler_sync_impl::d_taps[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>d_taps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" line="33" column="1" bodyfile="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a8fdf3e05b7a676f8adc2e1eac32b0661" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::bs::ec_descrambler_sync_impl::d_tap_count</definition>
+        <argsstring></argsstring>
+        <name>d_tap_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" line="34" column="1" bodyfile="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a1b211bcd7b18c787d8324ed0de787d47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bs::ec_descrambler_sync_impl::ec_descrambler_sync_impl</definition>
+        <argsstring>(unsigned int tap_mask, unsigned int preload)</argsstring>
+        <name>ec_descrambler_sync_impl</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tap_mask</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>preload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a0ea1a2378e2607731aee7c086a9fa2e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bs::ec_descrambler_sync_impl::~ec_descrambler_sync_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~ec_descrambler_sync_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__descrambler__sync__impl_1aa484e08c400c9f3856ee9fcbc8c1bc43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::bs::ec_descrambler_sync_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="36">
+        <label>sync_block</label>
+      </node>
+      <node id="34">
+        <label>gr::bs::ec_descrambler_sync_impl</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler__sync__impl"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>gr::bs::ec_descrambler_sync</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler__sync"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>sync_block</label>
+      </node>
+      <node id="37">
+        <label>gr::bs::ec_descrambler_sync_impl</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler__sync__impl"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>gr::bs::ec_descrambler_sync</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler__sync"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" line="30" column="1" bodyfile="/home/mint/gr-bs/lib/ec_descrambler_sync_impl.h" bodystart="29" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a44f976c7f773782552af13ad8c876e55" prot="private" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>d_shift_register</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a8fdf3e05b7a676f8adc2e1eac32b0661" prot="private" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>d_tap_count</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a1c992cdfa4ac165bed75f47a880ef847" prot="private" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>d_taps</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a1b211bcd7b18c787d8324ed0de787d47" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>ec_descrambler_sync_impl</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1a565c4d8492e4a294bf2e5d15618e12a8" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync_1aaed4d6096993d893495291336b8f8d36" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1aa484e08c400c9f3856ee9fcbc8c1bc43" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler__sync__impl_1a0ea1a2378e2607731aee7c086a9fa2e5" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler_sync_impl</scope><name>~ec_descrambler_sync_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

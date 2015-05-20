@@ -1,0 +1,12 @@
+/home/mint/gr-bs/build/swig/CMakeFiles/_bs_swig.dir
+/home/mint/gr-bs/build/swig/CMakeFiles/_bs_swig_doc_tag.dir
+/home/mint/gr-bs/build/swig/CMakeFiles/_bs_swig_swig_tag.dir
+/home/mint/gr-bs/build/swig/CMakeFiles/bs_swig_swig_2d0df.dir
+/home/mint/gr-bs/build/swig/CMakeFiles/bs_swig_swig_doc.dir
+/home/mint/gr-bs/build/docs/doxygen/CMakeFiles/doxygen_target.dir
+/home/mint/gr-bs/build/lib/CMakeFiles/gnuradio-bs.dir
+/home/mint/gr-bs/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/mint/gr-bs/build/python/CMakeFiles/pygen_python_32fca.dir
+/home/mint/gr-bs/build/swig/CMakeFiles/pygen_swig_5e311.dir
+/home/mint/gr-bs/build/lib/CMakeFiles/test-bs.dir
+/home/mint/gr-bs/build/CMakeFiles/uninstall.dir

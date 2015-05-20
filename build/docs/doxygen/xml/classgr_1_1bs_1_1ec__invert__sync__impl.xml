@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1bs_1_1ec__invert__sync__impl" kind="class" prot="public">
+    <compoundname>gr::bs::ec_invert_sync_impl</compoundname>
+    <basecompoundref refid="classgr_1_1bs_1_1ec__invert__sync" prot="public" virt="non-virtual">gr::bs::ec_invert_sync</basecompoundref>
+    <includes refid="ec__invert__sync__impl_8h" local="no">ec_invert_sync_impl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__invert__sync__impl_1aa96ef9bff23b8cf6a863da681c8a214f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bs::ec_invert_sync_impl::ec_invert_sync_impl</definition>
+        <argsstring>()</argsstring>
+        <name>ec_invert_sync_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_invert_sync_impl.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__invert__sync__impl_1af034007e1084a663f7edcb26c5f5e14f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bs::ec_invert_sync_impl::~ec_invert_sync_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~ec_invert_sync_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_invert_sync_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__invert__sync__impl_1aa438b594589d9e7db4e480f085b3ac96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::bs::ec_invert_sync_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/lib/ec_invert_sync_impl.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="46">
+        <label>gr::bs::ec_invert_sync</label>
+        <link refid="classgr_1_1bs_1_1ec__invert__sync"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>gr::bs::ec_invert_sync_impl</label>
+        <link refid="classgr_1_1bs_1_1ec__invert__sync__impl"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="50">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="49">
+        <label>gr::bs::ec_invert_sync</label>
+        <link refid="classgr_1_1bs_1_1ec__invert__sync"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>gr::bs::ec_invert_sync_impl</label>
+        <link refid="classgr_1_1bs_1_1ec__invert__sync__impl"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mint/gr-bs/lib/ec_invert_sync_impl.h" line="30" column="1" bodyfile="/home/mint/gr-bs/lib/ec_invert_sync_impl.h" bodystart="29" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classgr_1_1bs_1_1ec__invert__sync__impl_1aa96ef9bff23b8cf6a863da681c8a214f" prot="public" virt="non-virtual"><scope>gr::bs::ec_invert_sync_impl</scope><name>ec_invert_sync_impl</name></member>
+      <member refid="classgr_1_1bs_1_1ec__invert__sync_1a113552440b3e0f498e3a8c031d7c6328" prot="public" virt="non-virtual"><scope>gr::bs::ec_invert_sync_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1bs_1_1ec__invert__sync_1a6b251b97a35034705a8af46df86445e6" prot="public" virt="non-virtual"><scope>gr::bs::ec_invert_sync_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1bs_1_1ec__invert__sync__impl_1aa438b594589d9e7db4e480f085b3ac96" prot="public" virt="non-virtual"><scope>gr::bs::ec_invert_sync_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1bs_1_1ec__invert__sync__impl_1af034007e1084a663f7edcb26c5f5e14f" prot="public" virt="non-virtual"><scope>gr::bs::ec_invert_sync_impl</scope><name>~ec_invert_sync_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

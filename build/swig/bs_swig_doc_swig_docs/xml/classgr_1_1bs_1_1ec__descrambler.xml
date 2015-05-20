@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1bs_1_1ec__descrambler" kind="class" prot="public">
+    <compoundname>gr::bs::ec_descrambler</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="ec__descrambler_8h" local="no">ec_descrambler.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1bs_1_1ec__descrambler_1a3ed2ad5de5cbdc9446073081ddea697c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1bs_1_1ec__descrambler" kindref="compound">ec_descrambler</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ec_descrambler&gt; gr::bs::ec_descrambler::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/include/bs/ec_descrambler.h" line="39" column="1" bodyfile="/home/mint/gr-bs/include/bs/ec_descrambler.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1bs_1_1ec__descrambler_1a7e635a452ed27bcace8cebfec100018f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1bs_1_1ec__descrambler_1a3ed2ad5de5cbdc9446073081ddea697c" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::bs::ec_descrambler::make</definition>
+        <argsstring>(unsigned int tap_mask, unsigned int preload)</argsstring>
+        <name>make</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tap_mask</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>preload</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1bs_1_1ec__descrambler" kindref="compound">bs::ec_descrambler</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1bs_1_1ec__descrambler" kindref="compound">bs::ec_descrambler</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1bs_1_1ec__descrambler_1a7e635a452ed27bcace8cebfec100018f" kindref="member">bs::ec_descrambler::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mint/gr-bs/include/bs/ec_descrambler.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>gr::bs::ec_descrambler</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>gr::bs::ec_descrambler</label>
+        <link refid="classgr_1_1bs_1_1ec__descrambler"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mint/gr-bs/include/bs/ec_descrambler.h" line="37" column="1" bodyfile="/home/mint/gr-bs/include/bs/ec_descrambler.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1bs_1_1ec__descrambler_1a7e635a452ed27bcace8cebfec100018f" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler</scope><name>make</name></member>
+      <member refid="classgr_1_1bs_1_1ec__descrambler_1a3ed2ad5de5cbdc9446073081ddea697c" prot="public" virt="non-virtual"><scope>gr::bs::ec_descrambler</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
