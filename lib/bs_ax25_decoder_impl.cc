@@ -97,8 +97,6 @@ namespace gr {
 		myfile = fopen (filename,"a+");
 		char rawfilename[100];
 		strcpy(rawfilename, "rawdata.bin"); 
-//		strcat(rawfilename, filename);
-//		strcat(rawfilename, ".raw");
 		FILE * rawfile; 
 		printf("Raw Data File:%s\n", rawfilename);
 		rawfile = fopen (rawfilename,"a+");
@@ -160,9 +158,8 @@ namespace gr {
 	
 		FILE * myfile;
 		myfile = fopen (filename,"a+");
-		char *rawfilename; 
-		strcat( rawfilename, filename);
-		strcat(rawfilename, ".raw");
+		char rawfilename[100];
+		strcpy(rawfilename, "rawdata.bin"); 
 		FILE * rawfile;
 		rawfile = fopen (rawfilename,"a+");
 		time_t rawtime;
@@ -207,7 +204,7 @@ namespace gr {
 				}
 			}
 			else {
-				fprintf(rawfile, "%c", bit_shifted);
+				fprintf(rawfile, "%c", frame_buf[i]);
 				if(frame_buf[i]<0x7F && frame_buf[i]>=0x20){
 					fprintf(myfile, "%c", frame_buf[i]);
 				}
@@ -218,6 +215,7 @@ namespace gr {
 		}
 	fprintf(myfile, "\n\n");
 	fclose (myfile);
+	fclose(rawfile);
 	}
 	
 	
