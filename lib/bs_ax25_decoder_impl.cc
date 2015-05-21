@@ -30,6 +30,7 @@
 #include <time.h>
 #include <iostream>
 #include <fstream>
+#include <string>
 
 namespace gr {
   namespace bs {
@@ -94,6 +95,13 @@ namespace gr {
 	
 		FILE * myfile;
 		myfile = fopen (filename,"a+");
+		char rawfilename[100];
+		strcpy(rawfilename, "rawdata.bin"); 
+//		strcat(rawfilename, filename);
+//		strcat(rawfilename, ".raw");
+		FILE * rawfile; 
+		printf("Raw Data File:%s\n", rawfilename);
+		rawfile = fopen (rawfilename,"a+");
 		time_t rawtime;
 		struct tm * ptm;
 		time ( &rawtime );
@@ -109,6 +117,7 @@ namespace gr {
 			adr_len=28;
 		}
 	  	fprintf (myfile, "%04d-%02d-%02dT%02d:%02d:%02d;",ptm->tm_year+1900 ,ptm->tm_mon+1 ,ptm->tm_mday, (ptm->tm_hour)%24, ptm->tm_min, ptm->tm_sec);
+		fprintf (rawfile, "%04d-%02d-%02dT%02d:%02d:%02d;",ptm->tm_year+1900 ,ptm->tm_mon+1 ,ptm->tm_mday, (ptm->tm_hour)%24, ptm->tm_min, ptm->tm_sec);
 		for(i=0; i<frame_size-2; i++){
 			bit_shifted= frame_buf[i]>>1;
 			if(i==13 & adr_len>14){
@@ -124,6 +133,7 @@ namespace gr {
 				fprintf(myfile, ";");
 			}
 			else if(i<adr_len){
+				fprintf(rawfile, "%c", bit_shifted);
 				if(bit_shifted<0x7F && bit_shifted>=0x20){
 					fprintf(myfile, "%c", bit_shifted);
 				}
@@ -132,11 +142,13 @@ namespace gr {
 				}
 			}
 			else {
+				fprintf(rawfile, "%c", frame_buf[i]);
 				fprintf(myfile, "%02X ", frame_buf[i]);
 			}
 		}
 	fprintf(myfile, ";\n");
 	fclose (myfile);
+	fclose(rawfile);
 	}
 	
 	void
@@ -148,6 +160,11 @@ namespace gr {
 	
 		FILE * myfile;
 		myfile = fopen (filename,"a+");
+		char *rawfilename; 
+		strcat( rawfilename, filename);
+		strcat(rawfilename, ".raw");
+		FILE * rawfile;
+		rawfile = fopen (rawfilename,"a+");
 		time_t rawtime;
 		struct tm * ptm;
 		time ( &rawtime );
@@ -164,6 +181,7 @@ namespace gr {
 		}
 		fprintf(myfile, "UTC when packet was received: ");
 		fprintf (myfile, "%04d-%02d-%02dT%02d:%02d:%02d;",ptm->tm_year+1900 ,ptm->tm_mon+1 ,ptm->tm_mday, (ptm->tm_hour)%24, ptm->tm_min, ptm->tm_sec);
+		fprintf (rawfile, "%04d-%02d-%02dT%02d:%02d:%02d;",ptm->tm_year+1900 ,ptm->tm_mon+1 ,ptm->tm_mday, (ptm->tm_hour)%24, ptm->tm_min, ptm->tm_sec);
 		fprintf(myfile, "Destination:  ");
 		for(i=0; i<frame_size-2; i++){
 			bit_shifted= frame_buf[i]>>1;
@@ -180,6 +198,7 @@ namespace gr {
 				fprintf(myfile, "\nControl, PID and Info:\n");
 			}
 			else if(i<adr_len){
+				fprintf(rawfile, "%c", bit_shifted);
 				if(bit_shifted<0x7F && bit_shifted>=0x20){
 					fprintf(myfile, "%c", bit_shifted);
 				}
@@ -188,6 +207,7 @@ namespace gr {
 				}
 			}
 			else {
+				fprintf(rawfile, "%c", bit_shifted);
 				if(frame_buf[i]<0x7F && frame_buf[i]>=0x20){
 					fprintf(myfile, "%c", frame_buf[i]);
 				}
